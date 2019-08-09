@@ -1,0 +1,11 @@
+com\zhiyou100\mapper\TbItemMapper.class
+com\zhiyou100\mapper\TbOrderMapper.class
+com\zhiyou100\mapper\TbItemParamItemMapper.class
+com\zhiyou100\mapper\TbOrderShippingMapper.class
+com\zhiyou100\mapper\TbOrderItemMapper.class
+com\zhiyou100\mapper\TbContentCategoryMapper.class
+com\zhiyou100\mapper\TbContentMapper.class
+com\zhiyou100\mapper\TbItemCatMapper.class
+com\zhiyou100\mapper\TbItemDescMapper.class
+com\zhiyou100\mapper\TbUserMapper.class
+com\zhiyou100\mapper\TbItemParamMapper.class
