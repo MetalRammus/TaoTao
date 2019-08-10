@@ -8,6 +8,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
  * 淘淘商城自定义响应结构
+ * json工具类 2.9.9.2
  */
 public class JsonUtils {
 
