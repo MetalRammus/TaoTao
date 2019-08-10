@@ -34,7 +34,7 @@
 	jsp-api.version			2.0			 Nov, 2005 unique
 	jedis.version			2.7.2		 Apr, 2015
 	spring-data-redis		1.7.2.RELEASE	Jun, 2016
-	solrj.version			4.10.3		 Dec, 2014
+	solrj.version			4.10.3		 Dec, 2014 对应服务器版本
 	alipay-sdk-java			3.7.4.ALL	 Mar, 2019
 	-->
 	<properties>
