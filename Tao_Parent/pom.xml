@@ -8,31 +8,60 @@
 	<packaging>pom</packaging>
 	<description>统一管理jar版本</description>
 
-	<!-- 集中定义版本依赖 -->
+	<!-- 集中定义版本依赖 
+	joda-time.version		2.5		 	 Oct, 2014
+	commons-lang3.version 	3.3.2		 Apr, 2014
+	commons-io.version 		1.3.2		 Jan, 2008
+	commons-net.version 	3.3			 Jun, 2013
+	commons-fileupload		1.3.1	 	 Feb, 2014
+							1.3.3		 Jun, 2017
+	jackson.version 		2.8.3		 Sep, 2016
+							2.9.8		 Dec, 2018
+	httpclient.version 		4.3.5		 Jul, 2014 
+							4.3.6		 Nov, 2014
+	junit.version 			4.12	 	 Dec, 2014
+	slf4j.version			1.6.4		 Oct, 2011
+	log4j.version			1.2.17		 May, 2012
+	mybatis.version			3.4.6		 Mar, 2018
+	mybatis.spring.version	1.3.2		 Mar, 2018
+	mybatis.paginator		1.2.15		 Sep, 2014
+	pagehelper.version		4.1.6		 Jun, 2016
+	mysql.version			5.1.32		 May, 2015
+	druid.version			1.0.9		 Sep, 2014
+	spring.version	  		4.3.9.RELEASE	 Jun, 2017
+	jstl.version			1.2			 Jun, 2011
+	servlet-api.version		2.5			 Jul, 2006
+	jsp-api.version			2.0			 Nov, 2005 unique
+	jedis.version			2.7.2		 Apr, 2015
+	spring-data-redis		1.7.2.RELEASE	Jun, 2016
+	solrj.version			4.10.3		 Dec, 2014
+	alipay-sdk-java			3.7.4.ALL	 Mar, 2019
+	-->
 	<properties>
-		<junit.version>4.12</junit.version>
-		<spring.version>4.3.9.RELEASE</spring.version>
-		<mybatis.version>3.4.6</mybatis.version>
-		<mybatis.spring.version>1.3.2</mybatis.spring.version>
-		<mybatis.paginator.version>1.2.15</mybatis.paginator.version>
-		<mysql.version>5.1.32</mysql.version>
-		<druid.version>1.0.9</druid.version>
-		<slf4j.version>1.6.4</slf4j.version>
-		<log4j.version>1.2.17</log4j.version>
-		<jackson.version>2.8.3</jackson.version>
-		<httpclient.version>4.3.5</httpclient.version>
-		<jstl.version>1.2</jstl.version>
-		<servlet-api.version>2.5</servlet-api.version>
-		<jsp-api.version>2.0</jsp-api.version>
 		<joda-time.version>2.5</joda-time.version>
 		<commons-lang3.version>3.3.2</commons-lang3.version>
 		<commons-io.version>1.3.2</commons-io.version>
 		<commons-net.version>3.3</commons-net.version>
+		<commons-fileupload.version>1.3.3</commons-fileupload.version>
+		<jackson.version>2.9.8</jackson.version>
+		<httpclient.version>4.3.6</httpclient.version>
+		<junit.version>4.12</junit.version>
+		<slf4j.version>1.6.4</slf4j.version>
+		<log4j.version>1.2.17</log4j.version>
+		<mybatis.version>3.4.6</mybatis.version>
+		<mybatis.spring.version>1.3.2</mybatis.spring.version>
+		<mybatis.paginator.version>1.2.15</mybatis.paginator.version>
 		<pagehelper.version>4.1.6</pagehelper.version>
-		<jsplparser.version>0.9.1</jsplparser.version>
-		<commons-fileupload.version>1.3.1</commons-fileupload.version>
+		<mysql.version>5.1.32</mysql.version>
+		<druid.version>1.0.9</druid.version>
+		<spring.version>4.3.9.RELEASE</spring.version>
+		<jstl.version>1.2</jstl.version>
+		<servlet-api.version>2.5</servlet-api.version>
+		<jsp-api.version>2.0</jsp-api.version>
 		<jedis.version>2.7.2</jedis.version>
+		<spring-data-redis.version>1.7.2.RELEASE</spring-data-redis.version>
 		<solrj.version>4.10.3</solrj.version>
+		<alipay-sdk-java.version>3.7.4.ALL</alipay-sdk-java.version>
 	</properties>
 
 	<dependencyManagement>
@@ -58,6 +87,12 @@
 				<groupId>commons-net</groupId>
 				<artifactId>commons-net</artifactId>
 				<version>${commons-net.version}</version>
+			</dependency>
+			<!-- 文件上传 -->
+			<dependency>
+				<groupId>commons-fileupload</groupId>
+				<artifactId>commons-fileupload</artifactId>
+				<version>${commons-fileupload.version}</version>
 			</dependency>
 			<!-- json处理包 -->
 			<dependency>
@@ -171,12 +206,6 @@
 				<version>${jsp-api.version}</version>
 				<scope>provided</scope>
 			</dependency>
-			<!-- 文件上传 -->
-			<dependency>
-				<groupId>commons-fileupload</groupId>
-				<artifactId>commons-fileupload</artifactId>
-				<version>${commons-fileupload.version}</version>
-			</dependency>
 			<!-- redis -->
 			<dependency>
 				<groupId>redis.clients</groupId>
@@ -186,7 +215,7 @@
 			<dependency>
 				<groupId>org.springframework.data</groupId>
 				<artifactId>spring-data-redis</artifactId>
-				<version>1.7.2.RELEASE</version>
+				<version>${spring-data-redis.version}</version>
 			</dependency>
 			<!-- solr -->
 			<dependency>
@@ -198,7 +227,7 @@
 			<dependency>
 				<groupId>com.alipay.sdk</groupId>
 				<artifactId>alipay-sdk-java</artifactId>
-				<version>3.7.4.ALL</version>
+				<version>${alipay-sdk-java.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
