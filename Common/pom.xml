@@ -18,7 +18,7 @@
 	  		<artifactId>joda-time</artifactId>
 	  	</dependency>
   	
-  		<!-- apache 工具组件 -->
+  		<!-- apache 工具组件 流 -->
   		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
