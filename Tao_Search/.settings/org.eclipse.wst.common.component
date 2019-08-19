@@ -4,6 +4,12 @@
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="Tao_Manager_mapper-1.0.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Tao_Manager_mapper/Tao_Manager_mapper">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Tao_Manager_pojo-1.0.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Tao_Manager_pojo/Tao_Manager_pojo">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <dependent-module archiveName="Common-1.0.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Common/Common">
             <dependency-type>uses</dependency-type>
         </dependent-module>
